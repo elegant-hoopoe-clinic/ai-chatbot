@@ -1,0 +1,16 @@
+# unnecessary data
+/__pycache__
+*.pyc
+
+# Databases
+/chroma
+*.sqlite3
+*.bin
+*.pickle
+
+# Files
+/data
+
+# Secrets
+.env
+.env.local

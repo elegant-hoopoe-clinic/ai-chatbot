@@ -1,0 +1,21 @@
+# LangChain-based RAG System Requirements
+# Core LangChain dependencies
+langchain
+langchain-community
+langchain-chroma
+langchain-openai
+
+# Vector database
+chromadb
+
+# Embeddings
+sentence-transformers
+
+# Document processing
+PyPDF2
+
+# OpenAI API
+openai
+
+# Utilities
+python-dotenv
