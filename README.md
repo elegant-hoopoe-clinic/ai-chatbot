@@ -1,4 +1,4 @@
-# LangChain RAG System v0.3
+# LangChain RAG System as a Hoopoe AI ChatBot
 
 A modern Retrieval-Augmented Generation (RAG) system built with LangChain, featuring OpenAI integration and the same proven embedding models from previous versions.
 
@@ -15,7 +15,7 @@ A modern Retrieval-Augmented Generation (RAG) system built with LangChain, featu
 ## 🏗️ Architecture
 
 ```
-📁 v0.3/
+📁 AI CHATBOT/
 ├── 📄 advanced_langchain_rag.py      # Main RAG system class
 ├── 📄 langchain_embeddings.py        # LangChain embedding wrapper
 ├── 📄 langchain_document_processor.py # Document loading and splitting
@@ -153,23 +153,6 @@ for source in result["sources"]:
     print(f"Score: {source['relevance_score']:.3f}")
 ```
 
-## 🔄 Migration from v0.2
-
-The v0.3 system maintains compatibility with existing data while providing enhanced functionality:
-
-### Key Changes:
-- **LangChain Components**: All core functionality now uses LangChain
-- **Same Embeddings**: Uses identical Sentence Transformer models
-- **OpenAI Only**: Removed local LLM support (Ollama)
-- **Enhanced Metadata**: Better document tracking and source attribution
-- **Improved API**: More consistent and feature-rich interfaces
-
-### Migration Steps:
-1. Install new requirements
-2. Copy your `data/` directory to v0.3
-3. Repopulate the database: `python populate_database.py --reset`
-4. Test with: `python interactive_rag.py`
-
 ## 🛠️ Advanced Features
 
 ### Custom Embedding Models
@@ -230,10 +213,3 @@ results = [rag.query(q) for q in queries]
 - **Vector Search**: ChromaDB provides fast similarity search
 - **Memory Usage**: Efficient document processing with streaming
 
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## 📄 License
-
-This project is licensed under the MIT License.
